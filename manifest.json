@@ -69,7 +69,7 @@
     },
     {
       "matches": [
-        "https://www.acmicpc.net/*"
+        "https://6505e16530d1f534388a9bad--chipper-donut-c2aad0.netlify.app/*"
       ],
       "css": [
         "css/baekjoon/inject.css"
