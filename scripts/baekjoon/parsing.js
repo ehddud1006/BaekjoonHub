@@ -31,7 +31,7 @@ async function findData() {
 function makeDetailMessageAndReadme() {
   const tilyTextAreaElement = document.getElementById("tilyTextArea");
   const tilyTextAreaText = tilyTextAreaElement.value;
-  const directory = `틸리`;
+  const directory = `틸리/${formatDate(new Date())}}`;
   const message = `틸리 테스트 커밋`;
   const readme = tilyTextAreaText
   // prettier-ignore-end
@@ -40,6 +40,14 @@ function makeDetailMessageAndReadme() {
     message,
     readme,
   };
+}
+
+function formatDate(date) {
+  const year = date.getFullYear();
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');  // 월은 0부터 시작하기 때문에 1을 더해줍니다.
+  const day = date.getDate().toString().padStart(2, '0');
+
+  return `${year}-${month}-${day}`;
 }
 
 /*
