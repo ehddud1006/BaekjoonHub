@@ -24,19 +24,19 @@ console.log('hi',submitButton)
 // 버튼에 클릭 이벤트 리스너 추가
 submitButton.addEventListener("click", function() {
   // 여기에 클릭될 때 실행할 함수 내용을 작성
-  log('submit button clicked');
+  console.log('submit button clicked');
  startLoader(); 
 });
 
 
 
-function startLoader() {
-  loader = setInterval(async () => {
+async function startLoader() {
+
           stopLoader();
           const bojData = await findData();
           await beginUpload(bojData);
   
-  }, 2000);
+
 }
 
 function stopLoader() {
