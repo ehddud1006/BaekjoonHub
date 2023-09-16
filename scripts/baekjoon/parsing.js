@@ -29,11 +29,11 @@ async function findData() {
  * @returns {Object} { directory, fileName, message, readme, code }
  */
 function makeDetailMessageAndReadme() {
-  const buttonElement = document.getElementById("tilySubmit");
-  const buttonText = buttonElement.innerText;
+  const tilyTextAreaElement = document.getElementById("tilyTextArea");
+  const tilyTextAreaText = tilyTextAreaElement.innerText;
   const directory = `틸리/${Date()}`;
   const message = `틸리 테스트 커밋`;
-  const readme = buttonText
+  const readme = tilyTextAreaText
   // prettier-ignore-end
   return {
     directory,

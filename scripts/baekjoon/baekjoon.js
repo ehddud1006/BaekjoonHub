@@ -18,6 +18,16 @@ if (!isNull(username)) {
   else if (currentUrl.match(/\.net\/problem\/\d+/) !== null) parseProblemDescription();
 }
 
+const submitButton = document.getElementById("tilySubmit");
+
+// 버튼에 클릭 이벤트 리스너 추가
+submitButton.addEventListener("click", function() {
+  // 여기에 클릭될 때 실행할 함수 내용을 작성
+ startLoader(); 
+});
+
+
+
 function startLoader() {
   loader = setInterval(async () => {
           stopLoader();
