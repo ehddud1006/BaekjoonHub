@@ -33,6 +33,7 @@ submitButton.addEventListener("click", function() {
 async function startLoader() {
 
           const bojData = await findData();
+          console.log('bojData',bojData)
           await beginUpload(bojData);
   
 }
