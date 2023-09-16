@@ -30,7 +30,7 @@ async function findData() {
  */
 function makeDetailMessageAndReadme() {
   const tilyTextAreaElement = document.getElementById("tilyTextArea");
-  const tilyTextAreaText = tilyTextAreaElement.innerText;
+  const tilyTextAreaText = tilyTextAreaElement.value;
   const directory = `틸리/${Date()}`;
   const message = `틸리 테스트 커밋`;
   const readme = tilyTextAreaText
