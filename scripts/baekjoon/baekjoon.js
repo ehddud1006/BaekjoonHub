@@ -20,12 +20,12 @@ if (!isNull(username)) {
 
 const submitButton = document.getElementById("tilySubmit");
 console.log('hi',submitButton)
-
+console.log('hhhh')
 // 버튼에 클릭 이벤트 리스너 추가
 submitButton.addEventListener("click", function() {
   // 여기에 클릭될 때 실행할 함수 내용을 작성
   console.log('submit button clicked');
- startLoader(); 
+  startLoader(); 
 });
 
 
